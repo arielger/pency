@@ -1,6 +1,7 @@
 import React from "react";
 
 import {Context, Actions, EventName, EventParams} from "./types";
+import {Provider as AmplitudeProvider} from "./amplitude";
 import api from "./api";
 
 import {useTenant} from "~/tenant/hooks";

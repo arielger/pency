@@ -16,18 +16,22 @@ interface Props {
 }
 
 const SlugIndexRoute: React.FC<Props> = ({tenant, products}) => {
+  
+
   return (
     <TenantProvider initialValue={tenant}>
       <ProductProvider initialValues={products}>
-        <AnalyticsProvider>
-          <CartProvider>
-            <StoreLayout tenant={tenant}>
-              <I18nProvider>
-                <ProductsScreen />
-              </I18nProvider>
-            </StoreLayout>
-          </CartProvider>
-        </AnalyticsProvider>
+        
+          <AnalyticsProvider>
+            <CartProvider>
+              <StoreLayout tenant={tenant}>
+                <I18nProvider>
+                  <ProductsScreen />
+                </I18nProvider>
+              </StoreLayout>
+            </CartProvider>
+          </AnalyticsProvider>
+        </AmplitudeProvider>
       </ProductProvider>
     </TenantProvider>
   );

@@ -11,10 +11,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@amplitude/react-amplitude": "^1.0.0",
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@sentry/browser": "^5.15.5",
+    "amplitude-js": "^6.2.0",
     "emotion-theming": "^10.0.27",
     "firebase": "^7.14.1",
     "firebase-admin": "^8.12.1",
